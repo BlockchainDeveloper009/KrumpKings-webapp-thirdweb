@@ -224,7 +224,7 @@ const Home: NextPage = () => {
             <div className={styles.infoSide}>
             <Image
         src="/Krump Kings logo.jpg"
-        alt="Krump Kings Logo"
+        alt="Krump Kings Logo1"
         width={205}
         height={202}
         className={styles.buttonGapTop}
