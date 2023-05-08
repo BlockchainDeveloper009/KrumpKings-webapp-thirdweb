@@ -16,13 +16,13 @@ import {
   } from "@thirdweb-dev/react";
   import { BigNumber, utils } from "ethers";
   import type { NextPage } from "next";
-  import Image from "next/image";
+  
   import { useMemo, useState } from "react";
   import Timer from "../components/Timer";
   import styles from "../styles/Theme.module.css";
   import { parseIneligibility } from "../utils/parseIneligibility";
   import { ThirdwebSDK } from "@thirdweb-dev/sdk/evm";
-
+  import { Image } from '@mantine/core';
   // Put Your NFT Drop Contract address from the dashboard here
   const myNftDropContractAddress = "0x4470634F80f498348c234FA8f9D14a88C61785e3"; 
   //"0xbC044bc063F4F88e9d52D833c200aE05Ea65FAF9";
@@ -89,7 +89,17 @@ const sdk = new ThirdwebSDK("mumbai");
        console.log(`sds`)
        console.log(ownedNftContractMetadata)
 
-       return <ThirdwebNftMedia metadata={ownedNftContractMetadata[0].metadata} />;
+      // return <ThirdwebNftMedia metadata={ownedNftContractMetadata[0].metadata} />;
+      // Loop through the ownedNftContractMetadata array and render ThirdwebNftMedia components for each item
+  return (
+    <div className="nft-collection">
+      {ownedNftContractMetadata.map((ownedNftContractMetadata, index) => (
+        <div key={index} className="nft-item">
+          <ThirdwebNftMedia metadata={ownedNftContractMetadata.metadata} />
+        </div>
+      ))}
+    </div>
+  );
    }
 
     return (
@@ -119,7 +129,7 @@ const sdk = new ThirdwebSDK("mumbai");
             />
 
               </div>
-              <div><b>dd</b></div>
+              <div><b>Samples</b></div>
               <div>
                {loadNft()}
               </div>

@@ -20,34 +20,68 @@ import styles from "../styles/Theme.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
 import data  from "../components/data";
 import Head from "next/head";
-
-
+import { Box, Timeline, Text} from '@mantine/core';
+import { IconGitBranch, IconGitPullRequest, IconGitCommit, IconMessageDots } from '@tabler/icons-react';
 const contracts = ["0x4470634F80f498348c234FA8f9D14a88C61785e3", "0x54Fc85180C1E2E081d0Bd3A242d11981Ac9C5A4b"]
 // Put Your NFT Drop Contract address from the dashboard here
 const myNftDropContractAddress = contracts[1]; 
+
 //"0xbC044bc063F4F88e9d52D833c200aE05Ea65FAF9";
 const title = "Display Krump Kings page"
 const Home: NextPage = () => {
  
   return (
   <>
-
-<Head>
-        <title>${title}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="description"
-          content="NFT Drop minting page"
-        />
-        <meta
-          name="keywords"
-          content="Krump Kings minting"
-        />
+<div className={styles.container}>
+      <div className={styles.mintInfoContainer}>
+        <Head>
+            <title>${title}</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta
+              name="description"
+              content="NFT Drop minting page"
+            />
+            <meta
+              name="keywords"
+              content="Krump Kings minting"
+            />
       </Head>
-      <body>
-        <h1>Krump Images  coming soon</h1>
-      </body>
-  </>)
+      <h2> Launch Timeline</h2>
+      <Box sx={{  color:'purple', fontSize: 18, lineHeight: 1.4, paddingTop: 5, paddingDown:5, paddingLeft:200, paddingRight:200,}}>
+          
+            <Timeline active={1}>
+             <Timeline.Item bullet={<IconGitBranch size={12} />} title="Round 1">
+                <Text color="dimmed" size="sm">We&apos;ll start with <Text variant="link" component="span" inherit>launching</Text> Legends of Krump - Collection 1</Text>
+                <Text size="xs" mt={4}>Summer 2023</Text>
+              </Timeline.Item>
+
+              <Timeline.Item bullet={<IconGitCommit size={12} />} title="Round 2">
+                <Text color="dimmed" size="sm">We&apos;ll start with <Text variant="link" component="span" inherit>launching</Text> Legends of Krump - Collection 2</Text>
+                <Text size="xs" mt={4}>Fall 2023</Text>
+              </Timeline.Item>
+
+              <Timeline.Item title="Round 3" bullet={<IconGitPullRequest size={12} />} lineVariant="dashed">
+                <Text color="dimmed" size="sm">We&apos;ll build  <Text variant="link" component="span" inherit>marketplace for</Text> Individual Dancers</Text>
+                <Text size="xs" mt={4}>Winter 2023</Text>
+              </Timeline.Item>
+
+              <Timeline.Item title="Round 4" bullet={<IconMessageDots size={12} />}>
+                <Text color="dimmed" size="sm">We&apos;ll <Text variant="link" component="span" inherit>host</Text> Reality Tv Show</Text>
+                <Text size="xs" mt={4}>Spring 2024</Text>
+              </Timeline.Item>
+          </Timeline>
+
+          
+         
+          
+      </Box>
+      <a href="https://krumpkings.io/">Learn More</a>
+      
+  
+      </div>
+    </div>
+    </>
+      )
 };
 
 export default Home;
