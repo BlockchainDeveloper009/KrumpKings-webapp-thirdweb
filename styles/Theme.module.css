@@ -211,3 +211,25 @@
     width: 100%;
   }
 }
+
+
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.li {
+  border-right: 1px solid #bbb;
+  float: left;
+  display: inline;
+}
+.link {
+  display: block;
+  color: rgb(226, 17, 17);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
