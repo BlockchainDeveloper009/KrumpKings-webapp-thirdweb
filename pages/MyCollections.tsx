@@ -129,11 +129,7 @@ const sdk = new ThirdwebSDK("mumbai");
             />
 
               </div>
-              <div><b>Samples</b></div>
-              <div>
-               {loadNft()}
-              </div>
-              <div><b>end</b></div>
+       
               <div>
                 {myNftCollections()}
               </div>

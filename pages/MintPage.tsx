@@ -21,9 +21,9 @@ import { parseIneligibility } from "../utils/parseIneligibility";
 import data  from "../components/data";
 import Link from 'next/link' 
 
-const contracts = ["0x4470634F80f498348c234FA8f9D14a88C61785e3", "0x54Fc85180C1E2E081d0Bd3A242d11981Ac9C5A4b"]
+const contracts = ["0x4470634F80f498348c234FA8f9D14a88C61785e3", "0x54Fc85180C1E2E081d0Bd3A242d11981Ac9C5A4b","0xfb9677b69E9a0d1E1CD52C55A14BDbB899324225"]
 // Put Your NFT Drop Contract address from the dashboard here
-const myNftDropContractAddress = contracts[1]; 
+const myNftDropContractAddress = contracts[2]; 
 //"0xbC044bc063F4F88e9d52D833c200aE05Ea65FAF9";
 
 const MintPage: NextPage = () => {
