@@ -51,6 +51,7 @@ const ContactUs: NextPage = () => {
       <h3>Email us @ krumpkings@gmail.com </h3>
       <div><a href="https://krumpkings.io/">Learn More about US</a></div>
       <div><a href="https://krumpkings.io/team/">Meet the Team</a></div>
+      <div><a href="/DisplayTxns">DisplayTxns</a></div>
       
           
       </Box>
