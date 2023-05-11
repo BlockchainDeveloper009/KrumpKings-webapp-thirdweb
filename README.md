@@ -54,3 +54,8 @@ const activeChainId = ChainId.Mumbai;
 ## Join our Discord!
 
 For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+
+
+## Resources
+
+[Stripe with Nextjs](https://egghead.io/lessons/next-js-subscribe-to-stripe-webhooks-using-next-js-api-routes)

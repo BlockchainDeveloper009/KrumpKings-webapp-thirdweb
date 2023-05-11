@@ -14,6 +14,7 @@
     "@mantine/form": "^6.0.10",
     "@mantine/hooks": "^6.0.10",
     "@mantine/nprogress": "^6.0.10",
+    "@stripe/stripe-js": "^1.52.1",
     "@supabase/supabase-js": "^2.21.0",
     "@tabler/icons-react": "^2.17.0",
     "@thirdweb-dev/react": "^3",
