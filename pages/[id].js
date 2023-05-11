@@ -2,7 +2,7 @@ import { supabase } from '../utils/supabase'
 
 
 const LessonDetails = ({lesson}) => {
-    console.log(lesson)
+console.log({lesson})
     return <div>Lesson details</div>;
 
 };
