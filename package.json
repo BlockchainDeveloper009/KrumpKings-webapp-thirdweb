@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@azure/identity": "^3.2.1",
+    "@azure/keyvault-secrets": "^4.7.0",
     "@emotion/react": "^11.11.0",
     "@mantine/core": "^6.0.10",
     "@mantine/form": "^6.0.10",
